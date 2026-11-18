@@ -513,20 +513,6 @@ body.is-playing .listen__bars i:nth-child(3) { animation-delay: 0.33s; }
   margin-top: 0.95em;
 }
 
-.u-gold {
-  background-image: linear-gradient(transparent 72%, rgba(198, 154, 80, 0.34) 72%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.u-soft {
-  text-decoration-line: underline;
-  text-decoration-color: rgba(167, 119, 46, 0.45);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
-  text-decoration-style: dotted;
-}
-
 .nowrap {
   white-space: nowrap;
 }
@@ -730,16 +716,6 @@ body.is-playing .listen__bars i:nth-child(3) { animation-delay: 0.33s; }
 
 /* chapter 04 — looking at you */
 
-.spoken {
-  color: var(--brick);
-  font-family: var(--display);
-  font-size: 1.14em;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  border-bottom: 1px solid rgba(198, 154, 80, 0.5);
-  padding-bottom: 0.05em;
-}
-
 /* chapter 05 — except loving you */
 
 .truth {
@@ -759,7 +735,7 @@ body.is-playing .listen__bars i:nth-child(3) { animation-delay: 0.33s; }
   margin-top: 0.1em !important;
   color: var(--ink) !important;
   font-family: var(--display);
-  font-size: clamp(2.4rem, 4.5vw, 3.5rem) !important;
+  font-size: clamp(1.8rem, 3vw, 2.4rem) !important;
   line-height: 1.35 !important;
   letter-spacing: 0.05em !important;
 }
@@ -857,19 +833,20 @@ body.is-playing .listen__bars i:nth-child(3) { animation-delay: 0.33s; }
 .finale__index {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: clamp(38px, 6vw, 64px);
+  gap: clamp(14px, 2.2vw, 22px);
+  margin-bottom: clamp(28px, 4.5vw, 48px);
   color: var(--gold-soft);
   font-family: var(--display);
-  font-size: 14px;
-  letter-spacing: 0.14em;
+  font-size: clamp(2.45rem, 3.9vw, 3.55rem);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
 }
 
 .finale__index::after {
   content: '';
   flex: 1 1 auto;
   height: 1px;
-  background: linear-gradient(90deg, rgba(218, 184, 117, 0.3), transparent);
+  background: linear-gradient(90deg, rgba(218, 184, 117, 0.34), transparent);
 }
 
 .finale__lead {
@@ -1392,7 +1369,7 @@ body.is-loading .player__art {
   }
 
   .truth-line {
-    font-size: clamp(2.15rem, 10vw, 2.8rem) !important;
+    font-size: clamp(1.55rem, 7vw, 1.95rem) !important;
   }
 
   .light-study {
@@ -1405,7 +1382,11 @@ body.is-loading .player__art {
     padding: clamp(80px, 12vh, 120px) 22px clamp(150px, 20vh, 190px);
   }
 
-  .finale__index { margin-bottom: 34px; }
+  .finale__index {
+    margin-bottom: 34px;
+    gap: 11px;
+    font-size: clamp(2rem, 8vw, 2.7rem);
+  }
 
   .finale__lead {
     font-size: clamp(1.9rem, 8.4vw, 2.7rem);
@@ -1540,7 +1521,7 @@ body.is-loading .player__art {
             </div>
             <figcaption>纳兰性德 · 浣溪沙</figcaption>
           </figure>
-          <p>我习惯在没有失去的时候就开始怀念，因为<span class="u-gold">我好害怕失去</span>。</p>
+          <p>我习惯在没有失去的时候就开始怀念，因为我好害怕失去。</p>
         </div>
       </section>
 
@@ -1555,7 +1536,7 @@ body.is-loading .player__art {
         <div class="chapter-body">
           <p class="memory-lead">感觉记忆真的会越来越模糊。</p>
           <div class="memory-list">
-            <p>激烈的争吵是为了什么来着，连夜坐火车去找你，<span class="u-gold">一见面就好了</span>。</p>
+            <p>激烈的争吵是为了什么来着，连夜坐火车去找你，一见面就好了。</p>
             <p>虎泉青年酒店楼下的，排长队给你买的臭豆腐你还记得好不好吃吗。</p>
             <p>那年我们在巢湖看的电影是什么，那个集印章的鸡柳是什么味道，我是一点也想不起来了。</p>
           </div>
@@ -1573,7 +1554,7 @@ body.is-loading .player__art {
         <div class="chapter-body">
           <div class="wish">
             <div class="wish-years" aria-hidden="true"><span>6</span><i></i><b>♡</b><i></i><span>60</span></div>
-            <p><span class="wish-lead">六周年啦。</span><br>我许一个愿望，希望有<span class="u-gold nowrap">六十周年</span>的<span class="nowrap">那一天</span>，而且我们<span class="nowrap">一直爱彼此。</span></p>
+            <p><span class="wish-lead">六周年啦。</span><br>我许一个愿望，希望有<span class="nowrap">六十周年</span>的<span class="nowrap">那一天</span>，而且我们<span class="nowrap">一直爱彼此。</span></p>
           </div>
         </div>
       </section>
@@ -1589,7 +1570,7 @@ body.is-loading .player__art {
         <div class="chapter-body">
           <p>我常常想，我有没有看清楚你。你是什么样的，你想成什么样的，你是否自信，是否开心，我真的看清楚了吗？</p>
           <p>我又常常想，我把你攥得紧紧的，即便只是在心里，有没有让你感到不舒服。</p>
-          <p>我预设了一些台词，想对你更有帮助些，直到回到你身边，看清楚你的眼，那些台词慢慢化开，我可能只是笑笑，或者说一句，<span class="spoken">哎老婆。</span></p>
+          <p>我预设了一些台词，想对你更有帮助些，直到回到你身边，看清楚你的眼，那些台词慢慢化开，我可能只是笑笑，或者说一句，哎老婆。</p>
         </div>
       </section>
 
