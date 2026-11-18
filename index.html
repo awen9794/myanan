@@ -407,6 +407,16 @@ body.is-playing .scene-star {
   color: rgba(255, 245, 208, 0.98);
 }
 
+.hero-note {
+  margin: clamp(10px, 1.6vw, 15px) 0 0;
+  color: #a49182;
+  font-family: var(--ui);
+  font-size: 9px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 /* ---------- letter ---------- */
 
 .letter {
@@ -1472,6 +1482,13 @@ body.is-loading .player-art {
     height: 15px;
   }
 
+  .hero-note {
+    margin-top: 10px;
+    font-size: 8.5px;
+    line-height: 1.65;
+    letter-spacing: 0.035em;
+  }
+
   .letter {
     padding-top: 3px;
   }
@@ -1656,6 +1673,7 @@ body.is-loading .player-art {
           </span>
         </button>
       </div>
+      <p class="hero-note">这是一份碎碎的信，我按照重要程度排序（越往后越重要）。</p>
     </div>
   </header>
 
@@ -1825,7 +1843,6 @@ body.is-loading .player-art {
       <svg viewBox="0 0 24 22"><ellipse cx="7" cy="7" rx="2.1" ry="2.8"/><ellipse cx="12" cy="5.7" rx="2.1" ry="2.9"/><ellipse cx="17" cy="7" rx="2.1" ry="2.8"/><path d="M12 10.2c2.9 0 5.2 2.2 5.2 4.6 0 1.7-1.4 2.8-3.2 2.5-1.4-.2-2.5-.5-3.9-.5s-2.6.3-3.9.5c-1.9.3-3.3-.8-3.3-2.5 0-2.4 2.3-4.6 5.2-4.6Z"/></svg>
       <i></i>
     </div>
-    <p class="footer-note">这是一份碎碎的信，我按照重要程度排序（越往后越重要）。</p>
   </footer>
 </div>
 
